@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="zstd_dev"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stream">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/stream" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 stream"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stream/fast">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/stream" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 stream/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dictionary">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/dictionary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 dictionary"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dictionary/fast">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/dictionary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 dictionary/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testans">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/testans" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 testans"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testans/fast">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/testans" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 testans/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edudecode">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/edudecode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edudecode"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edudecode/fast">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/edudecode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edudecode/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compress">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/compress" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 compress"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compress/fast">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/compress" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 compress/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="decompress">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/decompress" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 decompress"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="decompress/fast">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/decompress" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 decompress/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testfse">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/testfse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 testfse"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testfse/fast">
+				<Option output="/tmp/tmp.l23uHsERu2/cmake-build-debug/testfse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.l23uHsERu2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/common"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/lib/compress"/>
+					<Add directory="/tmp/tmp.l23uHsERu2/doc/educational_decoder"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 testfse/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.l23uHsERu2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/tmp/tmp.l23uHsERu2/doc/educational_decoder/harness.c">
+			<Option target="edudecode"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/doc/educational_decoder/zstd_decompress.c">
+			<Option target="edudecode"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/doc/educational_decoder/zstd_decompress.h">
+			<Option target="edudecode"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/examples/dictionary_compression.c">
+			<Option target="dictionary"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/examples/simple_compression.c">
+			<Option target="compress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/examples/simple_decompression.c">
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/examples/streaming_compression.c">
+			<Option target="stream"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/debug.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/debug.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/entropy_common.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/error_private.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/error_private.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/fse_decompress.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/pool.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/pool.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/threading.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/threading.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/xxhash.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/xxhash.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/common/zstd_common.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/fse_compress.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/hist.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/hist.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/huf_compress.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_compress.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_compress_literals.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_compress_literals.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_compress_sequences.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_compress_sequences.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_compress_superblock.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_compress_superblock.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_double_fast.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_double_fast.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_fast.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_fast.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_lazy.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_lazy.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_ldm.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_ldm.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_opt.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstd_opt.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstdmt_compress.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/compress/zstdmt_compress.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/decompress/huf_decompress.c">
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/decompress/zstd_ddict.c">
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/decompress/zstd_ddict.h">
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/decompress/zstd_decompress.c">
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/decompress/zstd_decompress_block.c">
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/decompress/zstd_decompress_block.h">
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/dictBuilder/cover.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/dictBuilder/cover.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/dictBuilder/divsufsort.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/dictBuilder/divsufsort.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/dictBuilder/fastcover.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/dictBuilder/zdict.c">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/lib/dictBuilder/zdict.h">
+			<Option target="stream"/>
+			<Option target="dictionary"/>
+			<Option target="compress"/>
+			<Option target="decompress"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/test.c">
+			<Option target="testans"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/testzstd.c">
+			<Option target="testfse"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.l23uHsERu2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

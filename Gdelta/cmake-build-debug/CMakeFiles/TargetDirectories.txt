@@ -1,0 +1,6 @@
+/tmp/tmp.sHAb3vf017/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.sHAb3vf017/cmake-build-debug/CMakeFiles/edit_cache.dir
+/tmp/tmp.sHAb3vf017/cmake-build-debug/CMakeFiles/testzstd.dir
+/tmp/tmp.sHAb3vf017/cmake-build-debug/CMakeFiles/Gdelta.dir
+/tmp/tmp.sHAb3vf017/cmake-build-debug/CMakeFiles/edudecode.dir
+/tmp/tmp.sHAb3vf017/cmake-build-debug/CMakeFiles/benchmark.dir

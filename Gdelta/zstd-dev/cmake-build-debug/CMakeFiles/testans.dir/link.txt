@@ -1,0 +1,1 @@
+/usr/bin/cc  -O0  -g   CMakeFiles/testans.dir/test.c.o  -o testans  -L/tmp/tmp.l23uHsERu2/. -Wl,-rpath,/tmp/tmp.l23uHsERu2/. -ltestfse 

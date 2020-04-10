@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.sHAb3vf017/educational_decoder/harness.c
+stdio.h
+-
+stdlib.h
+-
+zstd_decompress.h
+/tmp/tmp.sHAb3vf017/educational_decoder/zstd_decompress.h
+
+/tmp/tmp.sHAb3vf017/educational_decoder/zstd_decompress.c
+zstd_decompress.h
+/tmp/tmp.sHAb3vf017/educational_decoder/zstd_decompress.h
+
+/tmp/tmp.sHAb3vf017/educational_decoder/zstd_decompress.h
+stddef.h
+-
+stdint.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+

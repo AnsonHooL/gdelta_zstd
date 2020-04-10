@@ -1,0 +1,16 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /tmp/tmp.sHAb3vf017
+-- Configuring done
+CMake Error at CMakeLists.txt:28 (add_executable):
+  Cannot find source file:
+
+    educational_decoder/harness.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: edudecode
+CMake Error: Cannot determine link language for target "edudecode".
+-- Generating done
+-- Build files have been written to: /tmp/tmp.sHAb3vf017/cmake-build-debug
+Unable to determine product file path for target edudecode. Running and debugging will be unavailable.

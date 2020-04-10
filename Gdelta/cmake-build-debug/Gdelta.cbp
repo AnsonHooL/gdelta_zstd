@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Gdelta"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testzstd">
+				<Option output="/tmp/tmp.sHAb3vf017/cmake-build-debug/testzstd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.sHAb3vf017/."/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/doc/educational_decoder"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/educational_decoder"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 testzstd"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testzstd/fast">
+				<Option output="/tmp/tmp.sHAb3vf017/cmake-build-debug/testzstd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.sHAb3vf017/."/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/doc/educational_decoder"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/educational_decoder"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 testzstd/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Gdelta">
+				<Option output="/tmp/tmp.sHAb3vf017/cmake-build-debug/Gdelta" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.sHAb3vf017/."/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/doc/educational_decoder"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/educational_decoder"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gdelta"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Gdelta/fast">
+				<Option output="/tmp/tmp.sHAb3vf017/cmake-build-debug/Gdelta" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.sHAb3vf017/."/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/doc/educational_decoder"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/educational_decoder"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gdelta/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edudecode">
+				<Option output="/tmp/tmp.sHAb3vf017/cmake-build-debug/edudecode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.sHAb3vf017/."/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/doc/educational_decoder"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/educational_decoder"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 edudecode"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edudecode/fast">
+				<Option output="/tmp/tmp.sHAb3vf017/cmake-build-debug/edudecode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.sHAb3vf017/."/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/doc/educational_decoder"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/educational_decoder"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 edudecode/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark">
+				<Option output="/tmp/tmp.sHAb3vf017/cmake-build-debug/benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.sHAb3vf017/."/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/doc/educational_decoder"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/educational_decoder"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 benchmark"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark/fast">
+				<Option output="/tmp/tmp.sHAb3vf017/cmake-build-debug/benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.sHAb3vf017/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.sHAb3vf017/."/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/zstd-dev/doc/educational_decoder"/>
+					<Add directory="/tmp/tmp.sHAb3vf017/educational_decoder"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 benchmark/fast"/>
+					<CompileFile command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j64 -f &quot;/tmp/tmp.sHAb3vf017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/tmp/tmp.sHAb3vf017/benchmark.cpp">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/compress.cpp">
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/compress.h">
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/educational_decoder/zstd_decompress.c">
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/educational_decoder/zstd_decompress.h">
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/main.cpp">
+			<Option target="Gdelta"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/debug.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/debug.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/entropy_common.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/error_private.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/error_private.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/fse_decompress.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/pool.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/pool.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/threading.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/threading.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/xxhash.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/xxhash.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/common/zstd_common.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/fse_compress.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/hist.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/hist.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/huf_compress.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_compress.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_compress_literals.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_compress_literals.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_compress_sequences.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_compress_sequences.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_compress_superblock.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_compress_superblock.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_double_fast.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_double_fast.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_fast.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_fast.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_lazy.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_lazy.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_ldm.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_ldm.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_opt.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstd_opt.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstdmt_compress.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/lib/compress/zstdmt_compress.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/testzstd.c">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstd-dev/testzstd.h">
+			<Option target="testzstd"/>
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstdsrc.cpp">
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/zstdsrc.h">
+			<Option target="Gdelta"/>
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.sHAb3vf017/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

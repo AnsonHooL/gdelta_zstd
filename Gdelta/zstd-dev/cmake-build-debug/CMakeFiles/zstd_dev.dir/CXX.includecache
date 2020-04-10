@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.l23uHsERu2/lib/zstd.h
+limits.h
+-
+stddef.h
+-
+
+/tmp/tmp.l23uHsERu2/testzstd.cpp
+lib/zstd.h
+/tmp/tmp.l23uHsERu2/lib/zstd.h
+cstdio
+-
+cstdlib
+-
+
