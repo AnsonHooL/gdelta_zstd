@@ -1,1 +1,5 @@
 Gdelta/.idea/workspace.xml
+*.[oa]
+*~
+*.xml
+Gdelta/cmake-build-debug
