@@ -1,1 +1,0 @@
-/usr/bin/c++   -O0    -g   CMakeFiles/edudecode.dir/educational_decoder/harness.cpp.o CMakeFiles/edudecode.dir/educational_decoder/zstd_decompress.cpp.o  -o edudecode 
