@@ -6,9 +6,9 @@
 #define GDELTA_COMPRESS_H
 
 #define MBSIZE 1024*1024
-#include <mem.h>
+#include "mem.h"
 #include "zstdsrc.h"
-#include <zstd_internal.h>
+#include "zstd_internal.h"
 typedef uint32_t UINT32;
 typedef uint32_t U32;
 
