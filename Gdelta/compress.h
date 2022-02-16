@@ -179,8 +179,7 @@ void SaveCompress(seqStore_t* seqstore,uint8_t* deltabuf,U32* deltasize);
 
 int gdelta_Encode( uint8_t* newBuf, U32 newSize,
                    uint8_t* baseBuf, U32 baseSize,
-                   uint8_t* dataBuf, uint8* seqbuf,
-                   U32* datasize,uint32_t* seqsize);
+                   uint8_t* dataBuf, U32* datasize);
 
 
 extern "C" {

@@ -12,7 +12,6 @@ int main() {
     uint8_t * inp = (uint8_t *)malloc(10*MBSIZE); //input
     uint8_t * bas = (uint8_t *)malloc(10*MBSIZE);
     uint8_t * databuf = (uint8_t *)malloc(10*MBSIZE);
-    uint8_t * seqbuf = (uint8_t *)malloc(10*MBSIZE);
     uint8_t * restore = (uint8_t *)malloc(10*MBSIZE);
 
     FILE* F1 = fopen(input,"r");
@@ -21,7 +20,6 @@ int main() {
     int Isize = 0;
     int Bsize = 0;
     U32 datasize;
-    U32 seqsize;
     U32 rsize;
     while (int chunkLen = fread(inp,1,MBSIZE,F1)) {
         Isize += chunkLen;
@@ -30,7 +28,7 @@ int main() {
         Bsize += chunkLen;
     }
 //    Bsize = 0;
-    gdelta_Encode(inp, Isize,bas,Bsize,databuf,seqbuf,&datasize,&seqsize);
+    gdelta_Encode(inp, Isize,bas,Bsize,databuf,&datasize);
 
     Gdelta_decompress1(databuf,datasize,bas,Bsize,restore,&rsize,Isize);
 
@@ -48,7 +46,6 @@ int main() {
     free(inp);
     free(bas);
     free(databuf);
-    free(seqbuf);
     free(restore);
 
     fclose(F1);

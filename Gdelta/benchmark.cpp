@@ -30,7 +30,6 @@ void gdeltatest(char* datapath)
     uint8_t * inp = (uint8_t *)malloc(10*MBSIZE); //input
     uint8_t * bas = (uint8_t *)malloc(10*MBSIZE);
 
-    uint8_t * seq = (uint8_t *)malloc(10*MBSIZE);
     uint8_t * restore = (uint8_t *)malloc(10*MBSIZE);
     uint8_t * data = (uint8_t *)malloc(10*MBSIZE);
     while(fileOperator.read(inpsize,sizeof(U64))  )
@@ -57,7 +56,6 @@ void gdeltatest(char* datapath)
 
 
         U32 datasize;
-        U32 seqsize;
         U32 rsize;
         if(round == 3831)
         {
@@ -79,7 +77,7 @@ void gdeltatest(char* datapath)
         gettimeofday(&TvStart, NULL);
 //        printf("round；%d\n",round);
 
-        gdelta_Encode(inp, inputsize32,bas,basesize32,data,seq,&datasize,&seqsize);
+        gdelta_Encode(inp, inputsize32,bas,basesize32,data,&datasize);
 
         gettimeofday(&TvEND, NULL);
         tEncode_x += (TvEND.tv_sec - TvStart.tv_sec) * 1000 + (TvEND.tv_usec - TvStart.tv_usec) / 1000.0;
@@ -96,7 +94,6 @@ void gdeltatest(char* datapath)
     free(bas);
     free(restore);
     free(inp);
-    free(seq);
     free(data);
     free(inpsize);
 
