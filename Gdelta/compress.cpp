@@ -6,7 +6,62 @@
 #include <cstdlib>
 #include <cstdio>
 #include <testzstd.h>
-#import "educational_decoder/zstd_decompress.h"
+#include "educational_decoder/zstd_decompress.h"
+
+static size_t
+searchMax (matchState * ms,const BYTE* ip, const BYTE* const iLimit,
+           size_t* offsetPtr);
+
+
+static size_t
+searchMax_Base (matchState * ms,const BYTE* ip, const BYTE* const iLimit,
+           size_t* offsetPtr);
+
+static void
+G_updateDUBT(matchState* ms,
+                const BYTE* ip, const BYTE* iend,
+                U32 mls);
+
+
+static void
+G_updateDUBT_Base(matchState* ms,
+             const BYTE* ip, const BYTE* iend,
+             U32 mls);
+
+
+
+static size_t
+G_DUBT_findBestMatch(matchState* ms,
+                          const BYTE* ip, const BYTE* const iend,
+                          size_t* offsetPtr,
+                          U32 mls,
+                          ZSTD_dictMode_e dictMode);
+
+static size_t
+G_DUBT_findBestMatch_Base(matchState* ms,
+                        const BYTE* ip, const BYTE* const iend,
+                        size_t* offsetPtr,
+                        U32 mls,
+                        ZSTD_dictMode_e dictMode);
+
+
+/** ZSTD_insertDUBT1() :
+ *  sort one already inserted but unsorted position
+ *  assumption : current >= btlow == (current - btmask)
+ *  doesn't fail */
+
+
+static void
+G_insertDUBT1(matchState* ms,
+              U32 current, const BYTE* inputEnd,
+              U32 nbCompares, U32 btLow,
+              ZSTD_dictMode_e dictMode);
+
+static void
+G_insertDUBT1_Base(matchState* ms,
+              U32 current, const BYTE* inputEnd,
+              U32 nbCompares, U32 btLow,
+              ZSTD_dictMode_e dictMode);
 
 void InitMSandSeq(matchState* ms, uint8_t* src, U32 srcsize,seqStore_t* seqstore)
 {
@@ -93,7 +148,7 @@ void SaveCompress(seqStore_t* seqstore,uint8_t* deltabuf,U32* deltasize)
     printf("fsenum:%d\n",seqnum);
 
 
-    for(int i = 0;i<seqnum;i++)
+    for(U32 i = 0;i<seqnum;i++)
     {
 //        printf("offset:%d\n",seqstore->sequencesStart[i].litLength);
 
@@ -102,8 +157,7 @@ void SaveCompress(seqStore_t* seqstore,uint8_t* deltabuf,U32* deltasize)
 
 int gdelta_Encode( uint8_t* newBuf, u_int32_t newSize,
                      uint8_t* baseBuf, u_int32_t baseSize,
-                     uint8_t* dataBuf, uint8* seqbuf,
-                     u_int32_t* datasize,uint32_t* seqsize)
+                     uint8_t* dataBuf, u_int32_t* datasize)
 {
 
     seqStore_t* seqstore = (seqStore_t*)malloc(sizeof(seqStore_t));
@@ -225,6 +279,7 @@ int gdelta_Encode( uint8_t* newBuf, u_int32_t newSize,
 
 
     DestroyMSandSeq(ms,seqstore);
+    return 0;
 }
 
 
@@ -254,7 +309,7 @@ int gdelta_Encode_Helper1( uint8_t* newBuf, u_int32_t newSize,
         size_t matchLength = 0;
         size_t offset = 0;
         const BYTE *start = ip + 1;  /* the start position of match */
-        printf("ip - base =%d\n",ip-base);
+        printf("ip - base =%ld\n",ip-base);
 //        printf("ms->base_chainTable[25]:%d\n",ms->base_chainTable[25]);
 
         if(ip - base == 12)
@@ -295,10 +350,10 @@ int gdelta_Encode_Helper1( uint8_t* newBuf, u_int32_t newSize,
         }
 
         /* store sequence */
-        _storeSequence:
+        // _storeSequence: \\unused
         {
             size_t const litLength = start - anchor;
-            printf("base match len:%d\n",matchLength);
+            printf("base match len:%lu\n",matchLength);
 //            printf("litlen:%d\n",litLength);
             handlebytes += litLength;
             handlebytes += matchLength;
@@ -641,7 +696,7 @@ int gdelta_Encode_Helper( uint8_t* newBuf, u_int32_t newSize,
         size_t matchLength = 0;
         size_t offset = 0;
         const BYTE *start = ip + 1;  /* the start position of match */
-        printf("ip - base =%d\n",ip-base);
+        printf("ip - base =%ld\n",ip-base);
 //        printf("hashTable[4923]=%d\n",ms->self_hashTable[4923]);
         if(ip - base == 8340)
         {
@@ -737,9 +792,9 @@ int gdelta_Encode_Helper( uint8_t* newBuf, u_int32_t newSize,
 _storeSequence:
         {
             size_t const litLength = start - anchor;
-            printf("litlen:%d\n",litLength);
-            printf("self match len:%d\n",matchLength);
-            printf("offset:%d\n",offset);
+            printf("litlen:%lu\n",litLength);
+            printf("self match len:%lu\n",matchLength);
+            printf("offset:%lu\n",offset);
             handlebytes += litLength;
             handlebytes += matchLength;
             storeSeq(seqstore, litLength, anchor, iend, (U32) offset, matchLength - MINMATCH);
@@ -1618,7 +1673,7 @@ int Gdelta_decompress(seqStore_t* seqstore, BYTE*deltaBuf, U32 deltaSize,BYTE* n
 
             inpos      += litlen;
 
-            for(int j=0;j<matchlen;j++,inpos++,restorelen++)
+            for(U32 j=0;j<matchlen;j++,inpos++,restorelen++)
             {
 
                 memcpy(restore+restorelen,restore+restorelen-offset,1);
@@ -1632,6 +1687,7 @@ int Gdelta_decompress(seqStore_t* seqstore, BYTE*deltaBuf, U32 deltaSize,BYTE* n
     assert(memcmp(newBuf,restore,newSize) == 0);
 //    printf("decode succsess\n");
     free(restore);
+    return 0;
 }
 
 
@@ -1645,7 +1701,7 @@ int Gdelta_decompress1(BYTE*deltaBuf, U32 deltaSize,BYTE* baseBuf,U32 basesize,B
     gdelta_decompress_litandseq((void*) deltaBuf,deltaSize,(void*) lit,(void*) seq,&litsize,&seqnum,inputsize);
 
 
-    for(int i =0;i<seqnum;i++)
+    for(uint32_t i =0;i<seqnum;i++)
     {
         seq[i].match_length -= MINMATCH;
         int flag = seq[i].match_length&1U;
@@ -1658,7 +1714,7 @@ int Gdelta_decompress1(BYTE*deltaBuf, U32 deltaSize,BYTE* baseBuf,U32 basesize,B
 
     }
 
-    for(int i =0;i<seqnum;i++)
+    for(uint32_t i =0;i<seqnum;i++)
     {
 //        printf("lit len[%d]:%d\n",i,seq[i].literal_length);
 //        printf("matchlen[%d]:%d\n",i,seq[i].match_length );
@@ -1673,7 +1729,7 @@ int Gdelta_decompress1(BYTE*deltaBuf, U32 deltaSize,BYTE* baseBuf,U32 basesize,B
     U32     offset  = 99999;
     U32 litsumlen  = litsize;
     U32 littmplen     = 0;
-    for(int i=0;i<seqnum;i++)
+    for(uint32_t i=0;i<seqnum;i++)
     {
         U32 litlen    = seq[i].literal_length;
         U32 offsetmp  = seq[i].offset;
@@ -1719,7 +1775,7 @@ int Gdelta_decompress1(BYTE*deltaBuf, U32 deltaSize,BYTE* baseBuf,U32 basesize,B
 
             inpos      += litlen;
 
-            for(int j=0;j<matchlen;j++,inpos++,restorelen++)
+            for(U32 j=0;j<matchlen;j++,inpos++,restorelen++)
             {
 
                 memcpy(restore+restorelen,restore+restorelen-offset,1);
@@ -1736,5 +1792,5 @@ int Gdelta_decompress1(BYTE*deltaBuf, U32 deltaSize,BYTE* baseBuf,U32 basesize,B
 //    assert( restorelen == newSize);
 //    assert(memcmp(newBuf,restore,newSize) == 0);
 //    printf("decode succsess\n");
-
+    return 0;
 }

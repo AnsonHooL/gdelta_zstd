@@ -23,14 +23,13 @@ void gdeltatest(char* datapath)
 
 
 
-    double sumbytes,predeltasize;
-    double tEncode_x,tDecode_x;
+    double sumbytes = 0,predeltasize = 0;
+    double tEncode_x = 0,tDecode_x = 0;
     uint32_t round = 0;
     struct timeval TvStart,TvEND;
     uint8_t * inp = (uint8_t *)malloc(10*MBSIZE); //input
     uint8_t * bas = (uint8_t *)malloc(10*MBSIZE);
 
-    uint8_t * seq = (uint8_t *)malloc(10*MBSIZE);
     uint8_t * restore = (uint8_t *)malloc(10*MBSIZE);
     uint8_t * data = (uint8_t *)malloc(10*MBSIZE);
     while(fileOperator.read(inpsize,sizeof(U64))  )
@@ -57,7 +56,6 @@ void gdeltatest(char* datapath)
 
 
         U32 datasize;
-        U32 seqsize;
         U32 rsize;
         if(round == 3831)
         {
@@ -79,7 +77,7 @@ void gdeltatest(char* datapath)
         gettimeofday(&TvStart, NULL);
 //        printf("round；%d\n",round);
 
-        gdelta_Encode(inp, inputsize32,bas,basesize32,data,seq,&datasize,&seqsize);
+        gdelta_Encode(inp, inputsize32,bas,basesize32,data,&datasize);
 
         gettimeofday(&TvEND, NULL);
         tEncode_x += (TvEND.tv_sec - TvStart.tv_sec) * 1000 + (TvEND.tv_usec - TvStart.tv_usec) / 1000.0;
@@ -96,7 +94,6 @@ void gdeltatest(char* datapath)
     free(bas);
     free(restore);
     free(inp);
-    free(seq);
     free(data);
     free(inpsize);
 
@@ -120,6 +117,6 @@ void gdeltatest(char* datapath)
 
 int main()
 {
-    char* datapath = "/data/OdessHome/similarChunks/WEB";
+    char datapath[] = "/data/OdessHome/similarChunks/WEB";
     gdeltatest(datapath);
 }

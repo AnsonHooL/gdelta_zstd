@@ -2146,8 +2146,8 @@ ZSTD_compressSequences_internal(seqStore_t* seqStorePtr,
                                         sequences, nbSeq,
                                         longOffsets, bmi2);
         FORWARD_IF_ERROR(bitstreamSize);
-        printf("fse num:%d\n",nbSeq);
-        printf("fsesize:%d\n",bitstreamSize);
+        printf("fse num:%lu\n",nbSeq);
+        printf("fsesize:%lu\n",bitstreamSize);
         for(int i=0;i<bitstreamSize;i++)
         {
             printf("%d op[i]:%d\n",i,op[i]);

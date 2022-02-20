@@ -6,9 +6,9 @@
 #define GDELTA_COMPRESS_H
 
 #define MBSIZE 1024*1024
-#include <mem.h>
+#include "mem.h"
 #include "zstdsrc.h"
-#include <zstd_internal.h>
+#include "zstd_internal.h"
 typedef uint32_t UINT32;
 typedef uint32_t U32;
 
@@ -115,62 +115,6 @@ inline size_t
 G_BtFindBestMatch_Base( matchState* ms,const BYTE* const ip, const BYTE* const iLimit,size_t* offsetPtr,
                    const U32 mls /* template */,const ZSTD_dictMode_e dictMode);
 
-
-static size_t
-searchMax (matchState * ms,const BYTE* ip, const BYTE* const iLimit,
-           size_t* offsetPtr);
-
-
-static size_t
-searchMax_Base (matchState * ms,const BYTE* ip, const BYTE* const iLimit,
-           size_t* offsetPtr);
-
-static void
-G_updateDUBT(matchState* ms,
-                const BYTE* ip, const BYTE* iend,
-                U32 mls);
-
-
-static void
-G_updateDUBT_Base(matchState* ms,
-             const BYTE* ip, const BYTE* iend,
-             U32 mls);
-
-
-
-static size_t
-G_DUBT_findBestMatch(matchState* ms,
-                          const BYTE* ip, const BYTE* const iend,
-                          size_t* offsetPtr,
-                          U32 mls,
-                          ZSTD_dictMode_e dictMode);
-
-static size_t
-G_DUBT_findBestMatch_Base(matchState* ms,
-                        const BYTE* ip, const BYTE* const iend,
-                        size_t* offsetPtr,
-                        U32 mls,
-                        ZSTD_dictMode_e dictMode);
-
-
-/** ZSTD_insertDUBT1() :
- *  sort one already inserted but unsorted position
- *  assumption : current >= btlow == (current - btmask)
- *  doesn't fail */
-
-
-static void
-G_insertDUBT1(matchState* ms,
-              U32 current, const BYTE* inputEnd,
-              U32 nbCompares, U32 btLow,
-              ZSTD_dictMode_e dictMode);
-
-static void
-G_insertDUBT1_Base(matchState* ms,
-              U32 current, const BYTE* inputEnd,
-              U32 nbCompares, U32 btLow,
-              ZSTD_dictMode_e dictMode);
-
 void InitMSandSeq(matchState* ms, uint8_t* src, U32 srcsize,seqStore_t* seqstore);
 
 void DestroyMSandSeq(matchState* ms,seqStore_t* seq);
@@ -179,8 +123,7 @@ void SaveCompress(seqStore_t* seqstore,uint8_t* deltabuf,U32* deltasize);
 
 int gdelta_Encode( uint8_t* newBuf, U32 newSize,
                    uint8_t* baseBuf, U32 baseSize,
-                   uint8_t* dataBuf, uint8* seqbuf,
-                   U32* datasize,uint32_t* seqsize);
+                   uint8_t* dataBuf, U32* datasize);
 
 
 extern "C" {
