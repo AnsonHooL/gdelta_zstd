@@ -3,6 +3,7 @@ project(Gdelta)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0   ")
+set(CMAKE_EXPORT_COMPILECOMMANDS ON)
 
 include_directories(.)
 include_directories(zstd-dev)

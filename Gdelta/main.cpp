@@ -6,8 +6,8 @@
 
 int main() {
 
-    char* input = "/home/thl/data/input3";
-    char* base  = "/home/thl/data/base3";
+    const char* input = "/home/thl/data/input3";
+    const char* base  = "/home/thl/data/base3";
 
     uint8_t * inp = (uint8_t *)malloc(10*MBSIZE); //input
     uint8_t * bas = (uint8_t *)malloc(10*MBSIZE);

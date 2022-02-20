@@ -23,8 +23,8 @@ void gdeltatest(char* datapath)
 
 
 
-    double sumbytes,predeltasize;
-    double tEncode_x,tDecode_x;
+    double sumbytes = 0,predeltasize = 0;
+    double tEncode_x = 0,tDecode_x = 0;
     uint32_t round = 0;
     struct timeval TvStart,TvEND;
     uint8_t * inp = (uint8_t *)malloc(10*MBSIZE); //input
@@ -117,6 +117,6 @@ void gdeltatest(char* datapath)
 
 int main()
 {
-    char* datapath = "/data/OdessHome/similarChunks/WEB";
+    char datapath[] = "/data/OdessHome/similarChunks/WEB";
     gdeltatest(datapath);
 }

@@ -115,62 +115,6 @@ inline size_t
 G_BtFindBestMatch_Base( matchState* ms,const BYTE* const ip, const BYTE* const iLimit,size_t* offsetPtr,
                    const U32 mls /* template */,const ZSTD_dictMode_e dictMode);
 
-
-static size_t
-searchMax (matchState * ms,const BYTE* ip, const BYTE* const iLimit,
-           size_t* offsetPtr);
-
-
-static size_t
-searchMax_Base (matchState * ms,const BYTE* ip, const BYTE* const iLimit,
-           size_t* offsetPtr);
-
-static void
-G_updateDUBT(matchState* ms,
-                const BYTE* ip, const BYTE* iend,
-                U32 mls);
-
-
-static void
-G_updateDUBT_Base(matchState* ms,
-             const BYTE* ip, const BYTE* iend,
-             U32 mls);
-
-
-
-static size_t
-G_DUBT_findBestMatch(matchState* ms,
-                          const BYTE* ip, const BYTE* const iend,
-                          size_t* offsetPtr,
-                          U32 mls,
-                          ZSTD_dictMode_e dictMode);
-
-static size_t
-G_DUBT_findBestMatch_Base(matchState* ms,
-                        const BYTE* ip, const BYTE* const iend,
-                        size_t* offsetPtr,
-                        U32 mls,
-                        ZSTD_dictMode_e dictMode);
-
-
-/** ZSTD_insertDUBT1() :
- *  sort one already inserted but unsorted position
- *  assumption : current >= btlow == (current - btmask)
- *  doesn't fail */
-
-
-static void
-G_insertDUBT1(matchState* ms,
-              U32 current, const BYTE* inputEnd,
-              U32 nbCompares, U32 btLow,
-              ZSTD_dictMode_e dictMode);
-
-static void
-G_insertDUBT1_Base(matchState* ms,
-              U32 current, const BYTE* inputEnd,
-              U32 nbCompares, U32 btLow,
-              ZSTD_dictMode_e dictMode);
-
 void InitMSandSeq(matchState* ms, uint8_t* src, U32 srcsize,seqStore_t* seqstore);
 
 void DestroyMSandSeq(matchState* ms,seqStore_t* seq);
