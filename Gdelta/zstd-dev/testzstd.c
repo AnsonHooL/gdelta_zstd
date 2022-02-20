@@ -321,7 +321,7 @@ int fseenins(void* src,int nbseq,void* dst)
 //        }
 
 
-        printf("bitstream size :%d\n", bitstreamSize);
+        printf("bitstream size :%lu\n", bitstreamSize);
         op += bitstreamSize;
     }
 

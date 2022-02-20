@@ -26,3 +26,5 @@ add_executable(Gdelta main.cpp compress.cpp zstdsrc.cpp  zstd-dev/testzstd.c  ${
 add_executable(benchmark benchmark.cpp compress.cpp zstdsrc.cpp  zstd-dev/testzstd.c  ${COMPRESS_SRCS}    ${COMMON_SRCS}  educational_decoder/zstd_decompress.c)
 add_executable(testzstd  zstd-dev/testzstd.c main.cpp compress.cpp educational_decoder/zstd_decompress.c ${COMPRESS_SRCS}    ${COMMON_SRCS})
 add_executable(edudecode educational_decoder/harness.c educational_decoder/zstd_decompress.c)
+
+add_library(gdelta STATIC compress.cpp zstdsrc.cpp  zstd-dev/testzstd.c  ${COMPRESS_SRCS}    ${COMMON_SRCS}  educational_decoder/zstd_decompress.c)

@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <testzstd.h>
-#import "educational_decoder/zstd_decompress.h"
+#include "educational_decoder/zstd_decompress.h"
 
 void InitMSandSeq(matchState* ms, uint8_t* src, U32 srcsize,seqStore_t* seqstore)
 {
@@ -253,7 +253,7 @@ int gdelta_Encode_Helper1( uint8_t* newBuf, u_int32_t newSize,
         size_t matchLength = 0;
         size_t offset = 0;
         const BYTE *start = ip + 1;  /* the start position of match */
-        printf("ip - base =%d\n",ip-base);
+        printf("ip - base =%ld\n",ip-base);
 //        printf("ms->base_chainTable[25]:%d\n",ms->base_chainTable[25]);
 
         if(ip - base == 12)
@@ -297,7 +297,7 @@ int gdelta_Encode_Helper1( uint8_t* newBuf, u_int32_t newSize,
         _storeSequence:
         {
             size_t const litLength = start - anchor;
-            printf("base match len:%d\n",matchLength);
+            printf("base match len:%lu\n",matchLength);
 //            printf("litlen:%d\n",litLength);
             handlebytes += litLength;
             handlebytes += matchLength;
@@ -640,7 +640,7 @@ int gdelta_Encode_Helper( uint8_t* newBuf, u_int32_t newSize,
         size_t matchLength = 0;
         size_t offset = 0;
         const BYTE *start = ip + 1;  /* the start position of match */
-        printf("ip - base =%d\n",ip-base);
+        printf("ip - base =%ld\n",ip-base);
 //        printf("hashTable[4923]=%d\n",ms->self_hashTable[4923]);
         if(ip - base == 8340)
         {
@@ -736,9 +736,9 @@ int gdelta_Encode_Helper( uint8_t* newBuf, u_int32_t newSize,
 _storeSequence:
         {
             size_t const litLength = start - anchor;
-            printf("litlen:%d\n",litLength);
-            printf("self match len:%d\n",matchLength);
-            printf("offset:%d\n",offset);
+            printf("litlen:%lu\n",litLength);
+            printf("self match len:%lu\n",matchLength);
+            printf("offset:%lu\n",offset);
             handlebytes += litLength;
             handlebytes += matchLength;
             storeSeq(seqstore, litLength, anchor, iend, (U32) offset, matchLength - MINMATCH);
